@@ -836,7 +836,16 @@ def predict(
         except TypeError:
             return [no_update] * 14
 
-    pred = round(sum(vals) / float(1e8), 1) # TODO insert multiple linear regression model here
+    # Employ multiple linear regression model
+    pred = round(
+        -32863.03404 + float(1.35637e-18) * pow(vals[0], 2) + 196.7549996 * pow(vals[1], 2) - \
+        8.417567092 * pow(vals[1], 3) + 0.135065381 * pow(vals[1], 4) - \
+        0.000770746 * pow(vals[1], 5) - 181.9639321 * vals[4] + 1.317468045 * pow(vals[4], 2) - \
+        0.004724814 * pow(vals[4], 3) + float(8.40747E-06) * pow(vals[4], 4) - \
+        float(5.94564E-09) * pow(vals[4], 5) - 0.294672018 * pow(vals[2], 3) + \
+        0.028524542 * pow(vals[2], 4) - 0.000727396 * pow(vals[2], 5),
+        1
+    )
 
     # Update plots
     plots = [
