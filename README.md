@@ -1,5 +1,7 @@
 # data-viz-ddw
 
+![App Preview](assets/sample.png 'App Preview')
+
 Data Visualisation Dashboard for 10.020 Data Driven World (2023).
 
 Adapted from https://realpython.com/python-dash/.

@@ -6,7 +6,8 @@ body {
 
 .header {
   background-color: #222222;
-  height: 256px;
+  height: 30vh;
+  padding-bottom: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,15 +35,40 @@ body {
   text-align: center;
 }
 
-.wrapper {
-  padding-right: 10px;
-  padding-left: 10px;
+.chart-wrapper {
+  padding-right: 5px;
+  padding-left: 5px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
 }
 
+.input-wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: left;
+}
+
 .card {
   margin-bottom: 10px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.menu {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: -50vh auto 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.menu-title {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #079A82;
 }
