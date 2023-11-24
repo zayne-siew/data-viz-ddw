@@ -325,7 +325,7 @@ def get_menu() -> html.Div:
                 ),
                 get_input(
                     id='temperature',
-                    title=AID_TITLE,
+                    title=TEMPERATURE_TITLE,
                     min_val=10,
                     max_val=45,
                     step=0.1
